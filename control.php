@@ -12,7 +12,7 @@ session_start();
 
 if (!isset($_POST['submit'])){
 
-    header('location:log.php?is&not&set');
+    header('location:index.php?is&not&set');
 
 }else if (isset($_POST['submit'])) {
 
@@ -21,9 +21,9 @@ if (!isset($_POST['submit'])){
 
     $_SESSION['expire'] = time();
 
-    header('location:log.php?&welcome');
+    header('location:index.php?&welcome');
 
 }else{
-        header('location:log.php?&problem&not&madani');
+        header('location:index.php?&problem&not&madani');
     }
 
